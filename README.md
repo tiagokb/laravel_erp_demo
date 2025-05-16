@@ -28,6 +28,26 @@ Acesse a versão de demonstração do projeto:
 
 ---
 
+### 🧪 Testes via Postman
+
+Este projeto inclui uma **collection do Postman** com requisição pronta para testar o endpoint de webhook manualmente.
+
+📁 Arquivo: [`Laravel ERP Demo.postman_collection.json`](postman%2FLaravel%20ERP%20Demo.postman_collection.json)
+
+> O webhook pode ser testado enviando um `POST` para `/webhook` com os seguintes parâmetros:
+>
+> - `id`: ID do pedido
+> - `status`: `paid`, `shipped` ou `canceled`
+>
+> Esses valores disparam os e-mails automáticos correspondentes, porem, qualquer valor enviado ao status sera reproduzido no banco e enviado um email genérico.
+
+#### Como usar:
+
+1. Importe o arquivo `.json` no [Postman](https://www.postman.com/).
+2. Defina a variável `{{base_url}}` como a URL da sua aplicação local ou online.
+3. Execute a requisição desejada para simular o recebimento do webhook.
+
+
 ## ⚙️ Como Rodar Localmente
 
 ```bash

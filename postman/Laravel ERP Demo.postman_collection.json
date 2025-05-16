@@ -1,0 +1,50 @@
+{
+	"info": {
+		"_postman_id": "f3ff39e7-514a-4c36-9c96-43ebdd5d3f98",
+		"name": "Laravel ERP Demo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26289718"
+	},
+	"item": [
+		{
+			"name": "Webhook",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "status",
+							"value": "canceled",
+							"description": "paid, shipped, canceled irão disparar emails personalizados.",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base_url}}/webhook",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"webhook"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"key": "base_url",
+			"value": "",
+			"type": "default"
+		}
+	]
+}
